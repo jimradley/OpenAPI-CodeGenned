@@ -1,0 +1,116 @@
+openapi: "3.0.3"
+info:
+  title: Weather API
+  version: "1.0"
+paths:
+  /weather:
+    get:
+      operationId: ListWeather
+      summary: Get all weather records
+      responses:
+        "200":
+          description: List of weather records
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/WeatherRecord'
+    post:
+      operationId: CreateWeather
+      summary: Create a weather record
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateWeatherRequest'
+      responses:
+        "201":
+          description: Created weather record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/WeatherRecord'
+  /weather/{id}:
+    get:
+      operationId: GetWeather
+      summary: Get a weather record by id
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Weather record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/WeatherRecord'
+    put:
+      operationId: UpdateWeather
+      summary: Update a weather record
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateWeatherRequest'
+      responses:
+        "200":
+          description: Updated weather record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/WeatherRecord'
+    delete:
+      operationId: DeleteWeather
+      summary: Delete a weather record
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "204":
+          description: Deleted
+components:
+  schemas:
+    WeatherRecord:
+      type: object
+      properties:
+        id:
+          type: integer
+        city:
+          type: string
+        temperatureC:
+          type: number
+        summary:
+          type: string
+    CreateWeatherRequest:
+      type: object
+      properties:
+        city:
+          type: string
+        temperatureC:
+          type: number
+        summary:
+          type: string
+    UpdateWeatherRequest:
+      type: object
+      properties:
+        city:
+          type: string
+        temperatureC:
+          type: number
+        summary:
+          type: string

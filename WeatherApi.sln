@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{27EDDF67-D1DE-4E50-A33C-A9566F288FD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherApi", "src\WeatherApi\WeatherApi.csproj", "{C95ABB94-05F0-418A-8293-037FC3A8A72A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenApiSourceGenerator", "src\OpenApiSourceGenerator\OpenApiSourceGenerator.csproj", "{6DDCBF93-C2A4-49DF-8968-F857BFAC5CD1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C95ABB94-05F0-418A-8293-037FC3A8A72A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C95ABB94-05F0-418A-8293-037FC3A8A72A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C95ABB94-05F0-418A-8293-037FC3A8A72A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C95ABB94-05F0-418A-8293-037FC3A8A72A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DDCBF93-C2A4-49DF-8968-F857BFAC5CD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DDCBF93-C2A4-49DF-8968-F857BFAC5CD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DDCBF93-C2A4-49DF-8968-F857BFAC5CD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DDCBF93-C2A4-49DF-8968-F857BFAC5CD1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C95ABB94-05F0-418A-8293-037FC3A8A72A} = {27EDDF67-D1DE-4E50-A33C-A9566F288FD5}
+		{6DDCBF93-C2A4-49DF-8968-F857BFAC5CD1} = {27EDDF67-D1DE-4E50-A33C-A9566F288FD5}
+	EndGlobalSection
+EndGlobal

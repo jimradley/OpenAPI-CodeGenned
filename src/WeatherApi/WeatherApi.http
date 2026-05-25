@@ -1,0 +1,36 @@
+@WeatherApi_HostAddress = http://localhost:5109
+
+GET {{WeatherApi_HostAddress}}/weather
+Accept: application/json
+
+###
+
+POST {{WeatherApi_HostAddress}}/weather
+Content-Type: application/json
+
+{
+  "city": "London",
+  "temperatureC": 20,
+  "summary": "Mild"
+}
+
+###
+
+GET {{WeatherApi_HostAddress}}/weather/1
+Accept: application/json
+
+###
+
+PUT {{WeatherApi_HostAddress}}/weather/1
+Content-Type: application/json
+
+{
+  "city": "London",
+  "temperatureC": 25,
+  "summary": "Warm"
+}
+
+###
+
+DELETE {{WeatherApi_HostAddress}}/weather/1
+Accept: application/json

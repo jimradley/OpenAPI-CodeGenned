@@ -1,0 +1,22 @@
+# .gitignore for .NET and IDEs
+
+# Build artifacts
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+
+# IDE settings
+.idea/
+.claude/
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
