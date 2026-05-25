@@ -1,6 +1,6 @@
-# OpenAI-CodeGenned: Contract-First Weather API
+# OpenAPI-CodeGenned: Contract-First Weather API
 
-A sophisticated demonstration of **Contract-First Development** in .NET 9, featuring a custom **Roslyn Source Generator** that scaffolds a complete CRUD API directly from an OpenAPI specification.
+A demonstration of **Contract-First Development** in .NET 9, featuring a custom **Roslyn Source Generator** that scaffolds a complete CRUD API directly from an OpenAPI specification.
 
 ## 🚀 Key Features
 
